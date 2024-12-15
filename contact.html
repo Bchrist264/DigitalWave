@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+    <link rel="shortcut icon" href="image/LogoNav.jpg" type="image/x-icon">
+
+    <!--Icone-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <nav class="navbar  navbar-expand-lg bg-white p-3 m-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" >
+            <img src="image/LogoNav.jpg" alt="Logo" class="img-fluid" width="100">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#apropos">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#services">Nos services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#accompagnement">Accompagnement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Contact</a>
+              </li>  
+            </ul>
+            <button class="btn btn-outline-info me-4 rounded-4">
+                 Contact
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section style="
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/arrcont.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      height: 400px;" 
+      class="mb-5 d-flex justify-content-center align-items-center">
+      <h1 class="text-white fw-bold text-center display-1" style="margin: 0;">Contactez-nous</h1>
+    </section>
+    
+
+ <section class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Coordonnées <i class="text-danger  fas fa-phone-alt"></i></h5>
+                <p>Email: DigitalWave@gmail.com </p>
+                <p> Phone: +225 05 03 39 36 81</p>
+
+                <h5>Adresse <i class="text-danger  fas fa-map-market-alt"></i></h5>
+                <p>9375+8G7 Abidjan</p>
+                <p>Abidjan,Rivéra3</p>
+
+                <h5>Horaire <i class="text-danger  fas fa-clock"></i></h5>
+                <p>Lundi-Vendredi</p>
+                <p>09:00 am - 08:00 pm</p>
+            </div>
+
+            <div class="col-md-8">
+
+                <form id="contactForm" class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Saisir votre nom" required>
+                            <label for="floatingName">Votre nom</label>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="Saisir votre email" required>
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                    </div> 
+                       
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingPhone" placeholder="Saisir votre téléphone" required>
+                            <label for="floatingPhone">Votre Téléphone</label>
+                        </div>
+                    </div>
+          
+                    <div class="col-md-6">
+                      <div class="input-group ">
+                      <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon" style="height: 58px;">
+                        <option selected>Vous etes interresser par le service de  ...</option>
+                        <option value="1">Développement d'application mobiles et web</option>
+                        <option value="2">Web design</option>
+                        <option value="3">Marketing digital</option>
+                        <option value="4">Création de sites web</option>
+                        <option value="5">Gestion de projet technique</option>
+                        <option value="6">Prestation de services</option>
+                      </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Saisir votre nom" required>
+                            <label for="floatingName">Compagnie</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingName" placeholder="Saisir votre nom" required>
+                            <label for="floatingName">Budget '$'</label>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-12">
+                        <div class="form-floating mb-3">
+                            <textarea id="floatingMessage" class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                            <label for="floatingMessage">Votre Message</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary form-control">Envoyer</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+ </section>
+
+
+
+<section class="d-flex justify-content-center align-items-center position-relative " style="margin-bottom: -25px;">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.3450141481485!2d-3.9620459256462373!3d5.364228135549628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ed9845da8497%3A0xbc07e45f1baa4169!2sGOMYCODE%20Riviera!5e0!3m2!1sfr!2sci!4v1734110199639!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4"></iframe>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-bottom foot   d-flex flex-column justify-content-end">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 ">
+          <div class="mb-3">
+            <img src="image/" alt="">
+            </div>
+              <h5 class="text-white mb-3">L'innovation numérique à la portée de votre entreprise</h5>
+        
+  
+                <!-- Icônes de réseaux sociaux -->
+                <div class="social-icons mb-4">
+                  <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="https://www.twitter.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                  <a href="https://www.linkedin.com" target="_blank" class="text-white me-3">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                  </a>
+                  </div>
+          
+                <p class="text-white">&copy; 2024 DigitalWave. Tous droits réservés.</p>
+        </div>
+  
+        <div class="col-md-5 mt-5 ">
+          <h5 class="text-white">Services</h5>
+          <div class="row">
+            <div class="col-md-6 text-muted">
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Développement d'application </a></p>
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Création de sites Web</a></p>
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Marketing digital</a></p>
+            </div>
+        
+            <div class="col-md-6">
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Gestion de projet technique</a></p>
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Web design</a></p>
+              <p><a href="index.html#services" class="text-white text-decoration-none >">Prestation de services</a></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3 ">
+          <h5 class="text-white">Contact</h5>
+          <p><a href="mailto:DigitalWave@gmail.com" class="text-white ">DigitalWave@gmail.com</a></p>
+          <p><a href="tel:+2250503393681" class="text-white">+225 05 03 39 36 81</a></p>
+  
+        </div>
+  
+  
+  
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

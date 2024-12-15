@@ -1,0 +1,187 @@
+body {
+  font-family : 'Roboto', sans-serif;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+h1 {
+  font-size: 60px;  /* Ajuste cette valeur selon la taille que tu préfères */
+}
+
+.sectionSt {
+  width: 100%;
+  height: 55vh; /* Ajuste la hauteur de la section */
+  background-image: url('../image/fsec3.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
+
+.sapropos{
+  justify-content: center;
+
+}
+
+.p-perso-text {
+  padding-top: 6rem;
+}
+
+.p-perso {
+  padding-top: 3rem;
+}
+
+/*vu mobile*/
+@media (max-width: 768px) {
+  .sectionSt {
+    width: 100%;
+    height: 80vh;
+  }
+  .p-perso-text {
+    padding-top: 2rem;
+  }
+}
+
+/*Nos secrvices*/
+
+ /* Hover effect sur les cartes de services */
+ .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+/* Overlay pour améliorer la lisibilité du texte */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(184, 182, 182, 0.3); /* Overlay sombre */
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.industry-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Ajustez selon vos besoins */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    transition: background-size 0.6s ease-in-out, background-color 0.6s ease-in-out; /* Transition fluide pour le zoom et le noircissement */
+  }
+  
+  .industry-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Légère superposition sombre */
+    transition: background-color 0.6s ease-in-out; /* Transition pour l'effet de sombre */
+    z-index: 0;
+  }
+  
+  .industry-item:hover {
+    background-size: 110%; /* Agrandit l'image en arrière-plan lors du survol */
+  }
+  
+  .industry-item:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Augmente l'effet sombre lors du survol */
+  }
+  
+  .industry-item h2 {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 1; /* Placer le titre au-dessus de l'overlay */
+  }
+  
+
+  
+  .industry-title {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Conteneur de l'icône pour aligner au-dessus du titre */
+.icon-container {
+    font-size: 2rem; /* Taille de l'icône */
+    margin-bottom: 15px; /* Espacement entre l'icône et le titre */
+}
+
+.card-body i {
+    color: #00d5ff; /* Couleur bleue pour l'icône */
+}
+
+h3 {
+  font-weight: bold;
+  color: #333;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/*Comment*/
+
+
+.cardC {
+  width: 18rem;
+  text-align: center;
+}
+.cardC img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+.section-titleC {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+
+.sectionQ{
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  position: relative;
+
+}
+
+@media (max-width: 768px) {
+  .sectionQ{
+width: ;
+  
+  }
+
+}
+
+.foot{
+  height: auto;
+}
+  
